@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+:root {
+    --background_body_pt1: rgb(0, 150, 136);
+    --background_body_pt2: rgb(219, 219, 211);
+}
+
+/* COMMON */
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, var(--background_body_pt1) 0%, var(--background_body_pt1) 16%, var(--background_body_pt2) 16%, var(--background_body_pt2) 100%);
+  }
+
+a {
+    color: inherit;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
