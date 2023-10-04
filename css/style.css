@@ -18,6 +18,12 @@ img {
     --background_body_pt1: rgb(0, 150, 136);
     --background_body_pt2: rgb(219, 219, 211);
     --background_header: rgb(234, 234, 234);
+    --background_notify: rgb(142, 218, 252);
+    --background_list_users: white;
+    --default_height: 4rem;
+    --padding_card: 1rem;
+    --number_of_card: 7;
+    --grey: rgb(177, 177, 177);
 }
 
 /* COMMON */
@@ -34,9 +40,6 @@ a {
 
 .flex {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .wrapper {
@@ -55,16 +58,161 @@ a {
 .chat {
     width: calc(100% - (100% / 3));
     height: 100%;
+    position: relative;
     /* DEBUG */
     background-color: blue;
 }
 
-.chat_header, .menu_header {
+.chat_header, .menu_header, .chat_footer {
     width: 100%;
-    padding: 1rem 1.5rem;
+    padding: .5rem;
+    height: var(--default_height);
+    z-index: 999;
     background-color: var(--background_header);
 }
+
+/* MENU */
+
+/* HEADER */
+.menu_header {    
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.menu_user_img {
+    max-width: 53px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.menu_menu {
+    font-size: 1.3rem;
+    gap: 1rem;
+    color: var(--grey);
+}
+
+/* MENU NOTIFY*/
+.menu_notify {
+    width: 100%;
+    height: var(--default_height);
+    background-color: var(--background_notify);
+}
+
+/* MENU SEARCH*/
+.menu_search {
+    width: 100%;
+    height: calc(var(--default_height) / 2);
+    background-color: var(--background_header);
+}
+
+/* MENU LIST*/
+.menu_list_users {
+    overflow-y: auto;
+    list-style: none;
+    width: 100%;
+    height: calc(100% - ((2 * var(--default_height)) + (var(--default_height) / 2)));
+    /* DEBUG */
+    background-color: yellow;
+}
+
+.menu_list_users > li {
+    padding: .5rem;
+    height: calc(100% / var(--number_of_card));
+    background-color: var(--background_list_users);
+}
+
+.menu_list_element {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+
+.list_users_img {
+    max-width: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.list_users_info {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.list_users_time {
+    position: absolute;
+    top: 1rem;
+    right: .5rem;
+}
+
+.list_users_info span, .list_users_time {
+    color: grey;
+}
+
+.list_users_info .name {
+    color: black;
+    font-size: 1.5rem;
+}
+
 
 /* CHAT */
 
 /* CHAT_HEADER */
+.chat_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat_user {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.chat_users_info {
+    color: darkgrey;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat_menu {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 1.5rem;
+    color: var(--grey);
+    font-size: 1.3rem;
+}
+
+.chat_user_img {
+    max-width: 53px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chat_name {
+    color: black;
+    font-size: 1.5rem;
+}
+
+
+
+/* CHAT_MAIN */
+.chat_main {
+    width: 100%;
+    height: calc(100% - var(--default_height));
+    padding: 4rem;
+    background-image: url(../img/mine.jpg);
+    background-repeat: repeat;
+    overflow-y:auto;
+}
+
+/* CHAT_FOOTER */
+.chat_footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

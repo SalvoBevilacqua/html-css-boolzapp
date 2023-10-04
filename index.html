@@ -13,18 +13,63 @@
     </head>
 
     <body>
-        <section class="wrapper flex">
-            <section class="menu">
+        <div class="wrapper flex">
+            <!-- MENU -->
+            <div class="menu">
+                <!-- HEADER -->
                 <header class="menu_header flex">
-                    <div class="menu_user"></div>
-                    <div class="menu_menu"></div>
-            </section>
-            <section class="chat">
-                <header class="chat_header flex">
-                    <div class="chat_user"></div>
-                    <div class="chat_menu"></div>
+                        <img class="menu_user_img" src="img/avatar_io.jpg" alt="photo">
+                        <div class="menu_menu flex">
+                            <i class="fa-solid fa-circle-notch"></i>
+                            <i class="fa-solid fa-message"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
                 </header>
-            </section>
-        </section>
+                
+                <!-- NOTIFY -->
+                <div class="menu_notify"></div>
+
+                <!-- SEARCH -->
+                <div class="menu_search"></div>
+
+                <!-- LIST -->
+                <ul class="menu_list_users">
+                    <li class="menu_list_element">
+                        <img class="list_users_img" src="img/avatar_1.jpg" alt="avatar">
+                        <div class="list_users_info">
+                            <span class="name">Michele</span>
+                            <span>Lorem impsum dolor sit amet</span>
+                        </div>
+                        <span class="list_users_time">16:15</span>                     
+                    </li>                    
+                </ul>
+            </div>
+
+            <!-- CHAT -->
+            <div class="chat">
+                <!-- HEADER -->
+                <div class="chat_header">
+                    <div class="chat_user">
+                        <img class="chat_user_img" src="img/avatar_1.jpg" alt="avatar">
+                        <div class="chat_users_info">
+                            <span class="chat_name">Michele</span>
+                            <span>Lorem impsum dolor sit amet</span>
+                        </div>
+                    </div>
+
+                    <div class="chat_menu">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-paperclip"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                
+                <!-- MAIN -->
+                <div class="chat_main"></div>
+
+                <!-- FOOTER -->
+                <footer class="chat_footer flex"></footer>
+            </div>
+        </div>
     </body>
 </html>
