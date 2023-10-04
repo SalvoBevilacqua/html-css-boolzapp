@@ -58,7 +58,7 @@
         height: calc(100% - var(--default_height));
     }
     .menu_list_users > li {
-        height: calc(100% / 7.5);
+        height: calc(100% / 8.3);
     }
 }
 

@@ -94,10 +94,35 @@ a {
 
 /* MENU NOTIFY*/
 .menu_notify {
+    padding: 0 var(--padding_card);
     width: 100%;
     height: var(--default_height);
     background-color: var(--background_notify);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 1rem;
 }
+
+.bell_border {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: white;
+    padding: .7rem;
+    color: var(--background_notify);
+    font-size: 1.2rem;
+}
+
+.menu_notify > div > span {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.menu_notify a {
+    color: gray;
+    text-decoration: underline;
+}
+
 
 /* MENU SEARCH*/
 .menu_search {
@@ -155,6 +180,7 @@ a {
 .list_users_info .name {
     color: black;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 
@@ -196,6 +222,7 @@ a {
 .chat_name {
     color: black;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 
