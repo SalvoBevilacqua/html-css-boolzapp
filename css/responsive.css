@@ -74,3 +74,16 @@
         width: 100%;
     }
 }
+
+/* FOOTER */
+@media screen and (max-width: 539px) {
+    .chat_footer{
+        justify-content: space-around;
+    }
+    .chat_footer i {
+        display: none;
+    }
+    .input {
+        width: 90%;
+    }
+}
