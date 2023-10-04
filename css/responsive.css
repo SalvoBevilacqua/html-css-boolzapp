@@ -1,6 +1,76 @@
-/* MENU */
-
-/* HEADER */
+/* WRAPPER */
 @media screen and (max-width: 991px) {
-    
+    body {
+        padding: 0;
+    }
+    .wrapper {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* MENU */
+@media screen and (max-width: 991px) {
+    .menu {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .menu {
+        display: none;
+    }
+}
+
+/* MENU HEADER */
+@media screen and (max-width: 991px) {
+    .menu_header {
+        justify-content: center;
+    }
+    .menu_menu {
+        display: none;
+    }
+}
+
+/* NOTIFY */
+@media screen and (max-width: 991px) {
+    .menu_notify{
+        display: none;
+    }
+}
+
+/* SEARCH */
+@media screen and (max-width: 991px) {
+    .menu_search{
+        display: none;
+    }
+}
+
+/* MENU LIST */
+@media screen and (max-width: 991px) {
+    .list_users_info, .list_users_time {
+        display: none;
+    }
+    .menu_list_element {
+        justify-content: center;
+    }
+    .menu_list_users {
+        height: calc(100% - var(--default_height));
+    }
+    .menu_list_users > li {
+        height: calc(100% / 7.5);
+    }
+}
+
+/* CHAT */
+@media screen and (max-width: 991px) {
+    .chat {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .chat {
+        width: 100%;
+    }
 }
