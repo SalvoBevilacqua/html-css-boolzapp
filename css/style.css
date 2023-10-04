@@ -65,7 +65,7 @@ a {
 
 .chat_header, .menu_header, .chat_footer {
     width: 100%;
-    padding: .5rem;
+    padding: 0 var(--padding_card);
     height: var(--default_height);
     z-index: 999;
     background-color: var(--background_header);
@@ -242,11 +242,15 @@ a {
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    padding: 0 var(--padding_card);
+    padding: 0 calc(2 * var(--padding_card));
     position: absolute;
     bottom: 0;
     left: 0;
     font-size: 1.5rem;
+}
+
+.chat_footer i {
+    color: rgb(105, 105, 105);
 }
 
 .input {
