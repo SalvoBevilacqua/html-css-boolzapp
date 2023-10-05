@@ -1,6 +1,6 @@
 /* WRAPPER */
 @media screen and (max-width: 991px) {
-    body {
+    .big_wrapper {
         padding: 0;
     }
     .wrapper {
@@ -57,9 +57,9 @@
     .menu_list_users {
         height: calc(100% - var(--default_height));
     }
-    .menu_list_users > li {
+    /* .menu_list_users > li {
         height: calc(100% / 8.3);
-    }
+    } */
 }
 
 /* CHAT */
@@ -67,11 +67,17 @@
     .chat {
         width: 85%;
     }
+    .right_message, .left_message {
+        max-width: 70%;
+    }
 }
 
 @media screen and (max-width: 539px) {
     .chat {
         width: 100%;
+    }
+    .right_message, .left_message {
+        max-width: 80%;
     }
 }
 

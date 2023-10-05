@@ -13,135 +13,191 @@
     </head>
 
     <body>
-        <div class="wrapper flex">
-            <!-- MENU -->
-            <div class="menu">
-                <!-- HEADER -->
-                <header class="menu_header flex">
-                        <img class="menu_user_img" src="img/avatar_io.jpg" alt="photo">
-                        <div class="menu_menu flex">
-                            <i class="fa-solid fa-circle-notch"></i>
-                            <i class="fa-solid fa-message"></i>
+        <div class="big_wrapper">
+            <div class="wrapper flex">
+                <!-- MENU -->
+                <div class="menu">
+                    <!-- HEADER -->
+                    <header class="menu_header flex">
+                            <img class="menu_user_img" src="img/avatar_io.jpg" alt="photo">
+                            <div class="menu_menu flex">
+                                <i class="fa-solid fa-circle-notch"></i>
+                                <i class="fa-solid fa-message"></i>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                    </header>
+                    
+                    <!-- NOTIFY -->
+                    <div class="menu_notify">
+                        <span class="bell_border"><i class="fa-solid fa-bell-slash"></i></span>
+                        <div>
+                            <span>Ricevi notifiche di nuovi messaggi</span>
+                            <a href="">Attiva notifiche desktop</a>
+                        </div>
+                    </div>
+
+                    <!-- SEARCH -->
+                    <div class="menu_search"></div>
+
+                    <!-- LIST -->
+                    <ul class="menu_list_users">
+                        <li class="menu_list_element">
+                            <img class="list_users_img" src="img/avatar_1.jpg" alt="avatar">
+                            <div class="list_users_info">
+                                <span class="name">Michele</span>
+                                <span>Lorem impsum dolor sit amet</span>
+                            </div>
+                            <span class="list_users_time">16:15</span>                     
+                        </li>
+
+                        <li class="menu_list_element">
+                            <img class="list_users_img" src="img/avatar_2.jpg" alt="avatar">
+                            <div class="list_users_info">
+                                <span class="name">Fabio</span>
+                                <span>Lorem impsum dolor sit amet</span>
+                            </div>
+                            <span class="list_users_time">16:15</span>                     
+                        </li>
+
+                        <li class="menu_list_element">
+                            <img class="list_users_img" src="img/avatar_3.jpg" alt="avatar">
+                            <div class="list_users_info">
+                                <span class="name">Samuele</span>
+                                <span>Lorem impsum dolor sit amet</span>
+                            </div>
+                            <span class="list_users_time">16:15</span>                     
+                        </li>
+
+                        <li class="menu_list_element">
+                            <img class="list_users_img" src="img/avatar_4.jpg" alt="avatar">
+                            <div class="list_users_info">
+                                <span class="name">Alessandro B.</span>
+                                <span>Lorem impsum dolor sit amet</span>
+                            </div>
+                            <span class="list_users_time">16:15</span>                     
+                        </li>
+
+                        <li class="menu_list_element">
+                            <img class="list_users_img" src="img/avatar_5.jpg" alt="avatar">
+                            <div class="list_users_info">
+                                <span class="name">Alessandro L.</span>
+                                <span>Lorem impsum dolor sit amet</span>
+                            </div>
+                            <span class="list_users_time">16:15</span>                     
+                        </li>
+
+                        <li class="menu_list_element">
+                            <img class="list_users_img" src="img/avatar_6.jpg" alt="avatar">
+                            <div class="list_users_info">
+                                <span class="name">Claudia</span>
+                                <span>Lorem impsum dolor sit amet</span>
+                            </div>
+                            <span class="list_users_time">16:15</span>                     
+                        </li>
+
+                        <li class="menu_list_element">
+                            <img class="list_users_img" src="img/avatar_7.jpg" alt="avatar">
+                            <div class="list_users_info">
+                                <span class="name">Federico</span>
+                                <span>Lorem impsum dolor sit amet</span>
+                            </div>
+                            <span class="list_users_time">16:15</span>                     
+                        </li>
+
+                        <li class="menu_list_element">
+                            <img class="list_users_img" src="img/avatar_8.jpg" alt="avatar">
+                            <div class="list_users_info">
+                                <span class="name">Davide</span>
+                                <span>Lorem impsum dolor sit amet</span>
+                            </div>
+                            <span class="list_users_time">16:15</span>                     
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- CHAT -->
+                <div class="chat">
+                    <!-- HEADER -->
+                    <div class="chat_header">
+                        <div class="chat_user">
+                            <img class="chat_user_img" src="img/avatar_1.jpg" alt="avatar">
+                            <div class="chat_users_info">
+                                <span class="chat_name">Michele</span>
+                                <span>Lorem impsum dolor sit amet</span>
+                            </div>
+                        </div>
+
+                        <div class="chat_menu">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-paperclip"></i>
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
-                </header>
-                
-                <!-- NOTIFY -->
-                <div class="menu_notify">
-                    <span class="bell_border"><i class="fa-solid fa-bell-slash"></i></span>
-                    <div>
-                        <span>Ricevi notifiche di nuovi messaggi</span>
-                        <a href="">Attiva notifiche desktop</a>
                     </div>
+                    
+                    <!-- MAIN -->
+                    <div class="chat_main">
+                        <div class="message">
+                            <div class="right_message">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto labore modi dolores exercitationem dignissimos temporibus, blanditiis laboriosam fugiat omnis maiores officiis velit itaque animi, facere est illo a! Quam, at.</div>
+                                <i class="hover_icon fa-solid fa-angle-down"></i>                                
+                                <span class="message_time">16:11</span>
+                                <div class="hide_info">
+                                    <p>Info messaggio</p>
+                                    <p>Cancella messaggio</p>
+                                </div>
+                            </div>
+
+                            <div class="left_message">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto labore modi dolores exercitationem dignissimos temporibus, blanditiis laboriosam fugiat omnis maiores officiis velit itaque animi, facere est illo a! Quam, at.</div>
+                                <i class="fa-solid fa-angle-down"></i>
+                                <span class="message_time">16:11</span>
+                            </div>
+
+                            <div class="right_message">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto labore modi dolores exercitationem dignissimos temporibus, blanditiis laboriosam fugiat omnis maiores officiis velit itaque animi, facere est illo a! Quam, at.</div>
+                                <i class="fa-solid fa-angle-down"></i>
+                                <span class="message_time">16:11</span>
+                            </div>
+
+                            <div class="left_message">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto labore modi dolores exercitationem dignissimos temporibus, blanditiis laboriosam fugiat omnis maiores officiis velit itaque animi, facere est illo a! Quam, at.</div>
+                                <i class="fa-solid fa-angle-down"></i>
+                                <span class="message_time">16:11</span>
+                            </div>
+
+                            <div class="right_message">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto labore modi dolores exercitationem dignissimos temporibus, blanditiis laboriosam fugiat omnis maiores officiis velit itaque animi, facere est illo a! Quam, at.</div>
+                                <i class="fa-solid fa-angle-down"></i>
+                                <span class="message_time">16:11</span>
+                            </div>
+
+                            <div class="left_message">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto labore modi dolores exercitationem dignissimos temporibus, blanditiis laboriosam fugiat omnis maiores officiis velit itaque animi, facere est illo a! Quam, at.</div>
+                                <i class="fa-solid fa-angle-down"></i>
+                                <span class="message_time">16:11</span>
+                            </div>
+
+                            <div class="right_message">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto labore modi dolores exercitationem dignissimos temporibus, blanditiis laboriosam fugiat omnis maiores officiis velit itaque animi, facere est illo a! Quam, at.</div>
+                                <i class="fa-solid fa-angle-down"></i>
+                                <span class="message_time">16:11</span>
+                            </div>
+
+                            <div class="left_message">
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto labore modi dolores exercitationem dignissimos temporibus, blanditiis laboriosam fugiat omnis maiores officiis velit itaque animi, facere est illo a! Quam, at.</div>
+                                <i class="fa-solid fa-angle-down"></i>
+                                <span class="message_time">16:11</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FOOTER -->
+                    <footer class="chat_footer flex">
+                        <i class="fa-regular fa-face-smile"></i>
+                        <div class="input"></div>
+                        <i class="fa-solid fa-microphone"></i>
+                    </footer>
                 </div>
-
-                <!-- SEARCH -->
-                <div class="menu_search"></div>
-
-                <!-- LIST -->
-                <ul class="menu_list_users">
-                    <li class="menu_list_element">
-                        <img class="list_users_img" src="img/avatar_1.jpg" alt="avatar">
-                        <div class="list_users_info">
-                            <span class="name">Michele</span>
-                            <span>Lorem impsum dolor sit amet</span>
-                        </div>
-                        <span class="list_users_time">16:15</span>                     
-                    </li>
-
-                    <li class="menu_list_element">
-                        <img class="list_users_img" src="img/avatar_2.jpg" alt="avatar">
-                        <div class="list_users_info">
-                            <span class="name">Fabio</span>
-                            <span>Lorem impsum dolor sit amet</span>
-                        </div>
-                        <span class="list_users_time">16:15</span>                     
-                    </li>
-
-                    <li class="menu_list_element">
-                        <img class="list_users_img" src="img/avatar_3.jpg" alt="avatar">
-                        <div class="list_users_info">
-                            <span class="name">Samuele</span>
-                            <span>Lorem impsum dolor sit amet</span>
-                        </div>
-                        <span class="list_users_time">16:15</span>                     
-                    </li>
-
-                    <li class="menu_list_element">
-                        <img class="list_users_img" src="img/avatar_4.jpg" alt="avatar">
-                        <div class="list_users_info">
-                            <span class="name">Alessandro B.</span>
-                            <span>Lorem impsum dolor sit amet</span>
-                        </div>
-                        <span class="list_users_time">16:15</span>                     
-                    </li>
-
-                    <li class="menu_list_element">
-                        <img class="list_users_img" src="img/avatar_5.jpg" alt="avatar">
-                        <div class="list_users_info">
-                            <span class="name">Alessandro L.</span>
-                            <span>Lorem impsum dolor sit amet</span>
-                        </div>
-                        <span class="list_users_time">16:15</span>                     
-                    </li>
-
-                    <li class="menu_list_element">
-                        <img class="list_users_img" src="img/avatar_6.jpg" alt="avatar">
-                        <div class="list_users_info">
-                            <span class="name">Claudia</span>
-                            <span>Lorem impsum dolor sit amet</span>
-                        </div>
-                        <span class="list_users_time">16:15</span>                     
-                    </li>
-
-                    <li class="menu_list_element">
-                        <img class="list_users_img" src="img/avatar_7.jpg" alt="avatar">
-                        <div class="list_users_info">
-                            <span class="name">Federico</span>
-                            <span>Lorem impsum dolor sit amet</span>
-                        </div>
-                        <span class="list_users_time">16:15</span>                     
-                    </li>
-
-                    <li class="menu_list_element">
-                        <img class="list_users_img" src="img/avatar_8.jpg" alt="avatar">
-                        <div class="list_users_info">
-                            <span class="name">Davide</span>
-                            <span>Lorem impsum dolor sit amet</span>
-                        </div>
-                        <span class="list_users_time">16:15</span>                     
-                    </li>
-                </ul>
-            </div>
-
-            <!-- CHAT -->
-            <div class="chat">
-                <!-- HEADER -->
-                <div class="chat_header">
-                    <div class="chat_user">
-                        <img class="chat_user_img" src="img/avatar_1.jpg" alt="avatar">
-                        <div class="chat_users_info">
-                            <span class="chat_name">Michele</span>
-                            <span>Lorem impsum dolor sit amet</span>
-                        </div>
-                    </div>
-
-                    <div class="chat_menu">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-paperclip"></i>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </div>
-                </div>
-                
-                <!-- MAIN -->
-                <div class="chat_main"></div>
-
-                <!-- FOOTER -->
-                <footer class="chat_footer flex">
-                    <i class="fa-regular fa-face-smile"></i>
-                    <div class="input"></div>
-                    <i class="fa-solid fa-microphone"></i>
-                </footer>
             </div>
         </div>
     </body>
