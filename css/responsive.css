@@ -70,6 +70,9 @@
     .right_message, .left_message {
         max-width: 70%;
     }
+    .chat_main {
+        padding: 2.5rem;
+    }
 }
 
 @media screen and (max-width: 539px) {
@@ -78,6 +81,9 @@
     }
     .right_message, .left_message {
         max-width: 80%;
+    }
+    .chat_main {
+        padding: 1.5rem;
     }
 }
 

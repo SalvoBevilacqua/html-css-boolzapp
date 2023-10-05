@@ -128,13 +128,26 @@ a {
     text-decoration: underline;
 }
 
+.menu_glass {
+    width: 100%;
+    background-color: white;
+    background-image: url(../img/magnifying-glass-solid.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: .1rem 4rem;
+    background-position: 1.5rem 0;
+}
+
 
 /* MENU SEARCH*/
 .menu_search {
     width: 100%;
     height: calc(var(--default_height) / 2);
     background-color: var(--background_header);
+    padding: .3rem;
 }
+
+
 
 /* MENU LIST*/
 .menu_list_users {
