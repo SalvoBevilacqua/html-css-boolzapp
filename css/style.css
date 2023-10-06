@@ -154,7 +154,7 @@ a {
 }
 
 #search:focus-visible {
-    border: none;
+    outline: none;
 }
 
 /* MENU LIST*/
