@@ -1,0 +1,40 @@
+@media (prefers-color-scheme: dark) {   
+    :root {
+        --background_body_pt1: black;
+        --background_body_pt2: rgba(8, 32, 8, 50);
+        --background_header: rgb(77, 77, 77);
+        --background_notify: rgb(47, 47, 47);
+        --background_list_users: rgb(47, 47, 47);
+        --grey: white;
+    }
+    img {
+        opacity: .75;
+        transition: opacity .5s ease-in-out;
+    }
+    img:hover {
+        opacity: 1;
+    }
+    .chat_name, .menu_notify, .chat_footer i {
+        color: white;
+    }
+    .list_users_info .name {
+        color: white;
+    }
+    .chat_main {
+        background-image: url(../img/bg_dark.jpg);
+    }
+    .right_message {
+        color: white;
+        background-color: rgb(15, 58, 15)
+    }
+    .left_message {
+        color: white;
+        background-color: var(--background_header);
+    }
+
+    @media screen and (max-width: 539px) {
+        .chat_footer, .chat_header {
+            border: none;
+        }
+    }
+}
