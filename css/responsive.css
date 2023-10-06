@@ -12,7 +12,8 @@
 /* MENU */
 @media screen and (max-width: 991px) {
     .menu {
-        width: 15%;
+        width: 90px;
+        min-width: 1px;
     }
 }
 
@@ -57,15 +58,13 @@
     .menu_list_users {
         height: calc(100% - var(--default_height));
     }
-    /* .menu_list_users > li {
-        height: calc(100% / 8.3);
-    } */
 }
+
 
 /* CHAT */
 @media screen and (max-width: 991px) {
     .chat {
-        width: 85%;
+        width: calc(100% - 90px);
     }
     .right_message, .left_message {
         max-width: 70%;
@@ -79,6 +78,19 @@
     .chat {
         width: 100%;
     }
+}
+
+/* CHAT MAIN*/
+@media screen and (max-width: 991px) {
+    .right_message, .left_message {
+        max-width: 70%;
+    }
+    .chat_main {
+        padding: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 539px) {
     .right_message, .left_message {
         max-width: 80%;
     }
@@ -91,11 +103,13 @@
 @media screen and (max-width: 539px) {
     .chat_footer{
         justify-content: space-around;
+        padding: .7rem 0;
     }
     .chat_footer i {
         display: none;
     }
-    .input {
+
+    .footer_input {
         width: 90%;
     }
 }
