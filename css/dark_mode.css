@@ -31,6 +31,10 @@
         color: white;
         background-color: var(--background_header);
     }
+    .hide_info, #search {
+        color: black;
+    }
+
 
     @media screen and (max-width: 539px) {
         .chat_footer, .chat_header {
